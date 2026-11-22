@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>سيرتي الذاتية</title>
+  <style>
+    /* TODO 1: تنسيق الصفحة والخط */
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0f111a;
+      color: #e6e8ef;
+      line-height: 1.7;
+      margin: 0;
+      padding: 30px 15px;
+    }
+
+    /* TODO 6: ظل الحاوية */
+    .cv-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 30px;
+      background-color: #171a26;
+      border-radius: 12px;
+      box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    /* TODO 2: رأس بخلفية متدرجة */
+    .cv-header {
+      background: linear-gradient(135deg, #1a1a2e, #16213e);
+      padding: 40px 20px;
+      text-align: center;
+      border-radius: 12px;
+    }
+
+    .cv-header h1 { margin: 10px 0 5px; }
+    .cv-header p { margin: 5px 0; }
+
+    /* TODO 7: صورة دائرية */
+    .cv-header img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #4caf50;
+      box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);
+    }
+
+    h2 {
+      color: #4caf50;
+      margin-top: 30px;
+      border-bottom: 1px solid #2a2f45;
+      padding-bottom: 5px;
+    }
+
+    /* TODO 3: المهارات على شكل وسوم */
+    .skills {
+      padding: 0;
+    }
+
+    .skills li {
+      display: inline-block;
+      list-style: none;
+      background: #4caf50;
+      color: #0f111a;
+      font-weight: bold;
+      margin: 5px;
+      padding: 5px 15px;
+      border-radius: 20px;
+    }
+
+    /* TODO 4: جدول منسق */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #2a2f45;
+      padding: 10px;
+      text-align: right;
+    }
+
+    th {
+      background-color: #4caf50;
+      color: #0f111a;
+    }
+
+    tr:nth-child(even) {
+      background-color: #1e2233;
+    }
+
+    /* TODO 5: تنسيق الروابط */
+    a {
+      color: #4caf50;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    a:hover {
+      color: #81c784;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="cv-container">
+
+    <header class="cv-header">
+      <img src="My.jpg" alt="الصورة الشخصية">
+      <h1>رغد</h1>
+      <p>نظم معلومات | طالب في جامعة الأقصى</p>
+      <p>
+        البريد الإلكتروني: <a href="raghed.mosa2005.gmail.com">raghed.mosa2005@gmail.com</a>
+        | الهاتف: <span dir="ltr">+972 59 798 1669</span>
+        | <a href="#">GitHub</a>
+      </p>
+    </header>
+
+    <section>
+      <h2>نبذة عني</h2>
+      <p>طالب نظم معلومات في جامعة الأقصى، أحب التعلّم وتطوير مهاراتي في البرمجة وتصميم المواقع. أتعلّم حاليًا أساسيات تطوير الويب باستخدام HTML و CSS، وأسعى لبناء مشاريع عملية تخدم دراستي.</p>
+    </section>
+
+    <section>
+      <h2>المهارات</h2>
+      <ul class="skills">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>أساسيات JavaScript</li>
+        <li>قواعد البيانات (SQL)</li>
+        <li>تحليل النظم</li>
+        <li>Microsoft Office</li>
+        <li>حل المشكلات</li>
+        <li>العمل ضمن فريق</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>المؤهلات الدراسية</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>الدرجة العلمية</th>
+            <th>المؤسسة</th>
+            <th>السنة</th>
+            <th>الحالة</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>بكالوريوس نظم معلومات</td>
+            <td>جامعة الأقصى</td>
+            <td>2023 - حتى الآن</td>
+            <td>قيد الدراسة</td>
+          </tr>
+          <tr>
+            <td>شهادة الثانوية العامة</td>
+            <td>المدرسة الثانوية</td>
+            <td>2022 - 2023</td>
+            <td>مكتملة</td>
+          </tr>
+          <tr>
+            <td>دورات عبر الإنترنت</td>
+            <td>منصة إدراك</td>
+            <td>2025</td>
+            <td>مكتملة</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>المشاريع</h2>
+      <ul>
+        <li><strong>سيرتي الذاتية</strong> - صفحة سيرة ذاتية مبنية ومنسّقة باستخدام HTML و CSS</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>تواصل معي</h2>
+      <p>راسلني عبر <a href="raghed.mosa2005@gmail.com">البريد</a> | <a href="raghedmosa2005-dotcom">GitHub</a> | <a href="#">https://www.linkedin.com/in/</a></p>
+    </section>
+
+  </div>
+</body>
+</html>
